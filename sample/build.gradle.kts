@@ -5,16 +5,13 @@ import java.util.Properties
 plugins {
     id("com.mikepenz.android.application")
     id("org.jetbrains.kotlin.multiplatform")
-    alias(libs.plugins.composeMultiplatform)
+    alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.composeCompiler)
     alias(libs.plugins.aboutlibraries)
 }
 
 if (appSigningFile != null) {
     apply(from = appSigningFile)
-}
-
-compose {
-    kotlinCompilerPlugin.set(libs.versions.jetpackcompose.compiler.get())
 }
 
 kotlin {
