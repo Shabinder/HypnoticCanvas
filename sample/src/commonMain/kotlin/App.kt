@@ -42,6 +42,7 @@ import com.mikepenz.hypnoticcanvas.shaders.GlossyGradients
 import com.mikepenz.hypnoticcanvas.shaders.GoldenMagma
 import com.mikepenz.hypnoticcanvas.shaders.IceReflection
 import com.mikepenz.hypnoticcanvas.shaders.InkFlow
+import com.mikepenz.hypnoticcanvas.shaders.MesmerizingLens
 import com.mikepenz.hypnoticcanvas.shaders.OilFlow
 import com.mikepenz.hypnoticcanvas.shaders.PurpleLiquid
 import com.mikepenz.hypnoticcanvas.shaders.Shader
@@ -59,7 +60,17 @@ fun App() {
     val uriHandler = LocalUriHandler.current
     var showLicenses by remember { mutableStateOf(false) }
     val hazeState = remember { HazeState() }
-    val options = listOf(GlossyGradients, PurpleLiquid, InkFlow, OilFlow, IceReflection, Stage, GoldenMagma, BlackCherryCosmos)
+    val options = listOf(
+        MesmerizingLens,
+        GlossyGradients,
+        PurpleLiquid,
+        InkFlow,
+        OilFlow,
+        IceReflection,
+        Stage,
+        GoldenMagma,
+        BlackCherryCosmos
+    )
     var selectedShader: Shader by remember { mutableStateOf(options.first()) }
     val animatedToolbarColor by animateColorAsState(
         if (showLicenses) Color.Unspecified else Color.Transparent
