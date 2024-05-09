@@ -2,9 +2,9 @@ plugins {
     id("com.mikepenz.android.library")
     id("com.mikepenz.kotlin.multiplatform")
     id("com.mikepenz.compose")
-    id("androidx.baselineprofile")
-    id("org.jetbrains.dokka")
-    id("com.vanniktech.maven.publish")
+    alias(libs.plugins.baselineprofile)
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.mavenpublish)
 }
 
 android {

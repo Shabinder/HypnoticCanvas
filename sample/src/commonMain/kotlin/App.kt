@@ -123,7 +123,10 @@ fun App() {
             }
         ) { contentPadding ->
             Box(Modifier.fillMaxSize()) {
-                Box(modifier = Modifier.haze(hazeState).fillMaxSize().shaderBackground(selectedShader))
+                Box(
+                    modifier = Modifier.haze(hazeState).fillMaxSize()
+                        .shaderBackground(selectedShader)
+                )
 
                 if (showLicenses) {
                     var libs by remember { mutableStateOf<Libs?>(null) }
