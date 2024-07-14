@@ -14,7 +14,7 @@ fun Project.configureJava() {
         }
     }
 
-    tasks.withType<JavaCompile>().configureEach { options.release.set(17) }
+    // tasks.withType<JavaCompile>().configureEach { options.release.set(17) }
 }
 
 private fun Project.java(action: JavaPluginExtension.() -> Unit) = extensions.configure<JavaPluginExtension>(action)
