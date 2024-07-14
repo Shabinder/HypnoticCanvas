@@ -37,16 +37,7 @@ import com.mikepenz.aboutlibraries.ui.compose.m3.LibrariesContainer
 import com.mikepenz.aboutlibraries.ui.compose.m3.LibraryDefaults
 import com.mikepenz.hypnoticcanvas.Github
 import com.mikepenz.hypnoticcanvas.shaderBackground
-import com.mikepenz.hypnoticcanvas.shaders.BlackCherryCosmos
-import com.mikepenz.hypnoticcanvas.shaders.GlossyGradients
-import com.mikepenz.hypnoticcanvas.shaders.GoldenMagma
-import com.mikepenz.hypnoticcanvas.shaders.IceReflection
-import com.mikepenz.hypnoticcanvas.shaders.InkFlow
-import com.mikepenz.hypnoticcanvas.shaders.MesmerizingLens
-import com.mikepenz.hypnoticcanvas.shaders.OilFlow
-import com.mikepenz.hypnoticcanvas.shaders.PurpleLiquid
-import com.mikepenz.hypnoticcanvas.shaders.Shader
-import com.mikepenz.hypnoticcanvas.shaders.Stage
+import com.mikepenz.hypnoticcanvas.shaders.*
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.haze
 import dev.chrisbanes.haze.hazeChild
@@ -64,6 +55,7 @@ fun App() {
     val options = listOf(
         MesmerizingLens,
         GlossyGradients,
+        GradientFlow,
         PurpleLiquid,
         InkFlow,
         OilFlow,
