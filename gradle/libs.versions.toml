@@ -1,15 +1,15 @@
 [versions]
-agp = "8.3.0"
+agp = "8.5.1"
 
 androidx-benchmark = "1.2.4"
-androidx-test-ext-junit = "1.1.5"
-coil = "3.0.0-alpha06"
+androidx-test-ext-junit = "1.2.1"
+coil = "3.0.0-alpha08"
 compose = "1.6.7"
-compose-plugin = "1.6.10-rc01"
-kotlin = "2.0.0-RC2"
+compose-plugin = "1.6.11"
+kotlin = "2.0.0"
 ktor = "3.0.0-wasm2"
-aboutlib = "11.1.4"
-haze = "0.7.1"
+aboutlib = "11.2.2"
+haze = "0.7.3"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
